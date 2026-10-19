@@ -1,6 +1,7 @@
 package id.riptidecooldown;
 
 import net.minecraft.core.Holder;
+import net.minecraft.world.Containers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.game.ClientboundSetHeldSlotPacket;
 import net.minecraft.server.level.ServerPlayer;
@@ -37,7 +38,7 @@ public final class HeldItemEnforcer {
 			ItemStack moved = off.copy();
 			player.setItemInHand(InteractionHand.OFF_HAND, ItemStack.EMPTY);
 			if (!inv.add(moved)) {
-				player.drop(moved, false);
+				Containers.dropItemStack(player.level(), player.getX(), player.getY(), player.getZ(), moved);
 			}
 			notice(player);
 		}
