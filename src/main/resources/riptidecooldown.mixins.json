@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "id.riptidecooldown.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "HopperBlockEntityMixin",
+    "ShulkerBoxSlotMixin",
+    "SlotMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

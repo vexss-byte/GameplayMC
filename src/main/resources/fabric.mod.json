@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "riptidecooldown",
+  "version": "${version}",
+  "name": "Riptide Cooldown",
+  "description": "Trident dengan Riptide kena cooldown yang bisa diatur. Trident riptide cooldown tidak bisa dipegang, chat diblokir untuk semua player, netherite tidak bisa masuk chest/ender chest/shulker box (termasuk lewat hopper dan dropper).",
+  "authors": ["Kamu"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["id.riptidecooldown.RiptideCooldownMod"]
+  },
+  "mixins": ["riptidecooldown.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.3-",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
